@@ -1,11 +1,13 @@
 from django.contrib.auth import login # 追加
 from django.contrib.auth.forms import UserCreationForm # 追加
 from django.shortcuts import render, redirect # redirectをインポート
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
     return render(request, "kanban/index.html")
 
+@login_required
 def home(request):
     return render(request, "kanban/home.html")
 
