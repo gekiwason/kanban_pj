@@ -1,6 +1,4 @@
 *.pyc
-*~
-/.vscode
 __pycache__
 kanbanvenv
 db.sqlite3
